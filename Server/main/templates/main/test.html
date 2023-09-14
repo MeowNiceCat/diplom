@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{% block title %}{% endblock %}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static 'main/css/test.css' %}">
+</head>
+<body>
+
+<div class="header">
+  <h1>Типа сайт</h1>
+  <p></p>
+</div>
+
+<div class="navbar">
+  <a href="#">Доп страница</a>
+  <a href="#">Создать</a>
+  <a href="/login" class="right">Войти</a>
+  <a href="/register" class="right">Регистрация</a>
+</div>
+
+<div class="row">
+  <div class="side">
+      <h2>Что то</h2>
+      <h5>Да</h5>
+      <div class="fakeimg" style="height:200px;">Изображение</div>
+      <h3>Фотки</h3>
+      <div class="fakeimg" style="height:60px;">Изображение</div><br>
+      <div class="fakeimg" style="height:60px;">Изображение</div><br>
+      <div class="fakeimg" style="height:60px;">Изображение</div>
+  </div>
+  <div class="main">
+      <h2>Типо описание</h2>
+      <h5></h5>
+      <div class="fakeimg" style="height:200px;">Само описание</div>
+      <br>
+      <h2>Ненужная хрень</h2>
+      <h5></h5>
+      <div class="fakeimg" style="height:200px;">Та самая хрень</div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Контакты</h2>
+    <div class="adress">
+            Тут могла быть ваша реклама</div>
+    <div class="phone">
+        +375333333333
+    </div>
+</div>
+    {% block content %}{% endblock %}
+</body>
+</html>
